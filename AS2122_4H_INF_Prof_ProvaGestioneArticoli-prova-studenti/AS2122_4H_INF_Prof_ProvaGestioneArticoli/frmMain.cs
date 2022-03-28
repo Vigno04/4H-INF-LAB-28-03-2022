@@ -13,7 +13,7 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
     public partial class frmMain : Form
     {
         List<Articolo> articoli;
-
+        int nArticoli;
         public frmMain()
         {
             InitializeComponent();
@@ -21,6 +21,7 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             // TODO: (4) creazione lista articoli
             // ...
             articoli = new List<Articolo>();
+            nArticoli = -1;
         }
 
         private void btnAggiungiArticolo_Click(object sender, EventArgs e)
@@ -34,7 +35,9 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
                 // aggiungi l'articolo all'elenco di articoli
                 // TODO: (1) aggiungere l'articolo creato dai dati di frmArticoli nella lista articoli
                 // ...
-
+                nArticoli++;
+                Articolo articolo = new Articolo(nArticoli, f.Descrizione, f.UnitaMisura, f.Prezzo);
+                articoli.Add(articolo);
                 lblArticoliInseriti.Text = $"Articoli ({articoli.Count})";
             }
         }
@@ -47,6 +50,11 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
                 case "Visualizza articoli":
                     // TODO: (2) aggiungere visualizzazione articoli inseriti nella listbox
                     // ... lstElenco.Items.Add(a.Visualizzati()); 
+                    foreach (Articolo articolo in articoli)
+                    {
+                        lstElenco.Items.Add(articolo.Visualizzati());
+                    }
+
                     break;
             }
         }
@@ -60,6 +68,10 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
 
             // TODO: (3) aggiungere visualizzazione dettaglio articolo nelle label
             // ... lblDescrizione.Text = articoli[index].Descrizione;
+            lblDescrizione.Text = articoli[index].Descrizione;
+            lblPrezzo.Text = articoli[index].Prezzo.ToString();
+            lblUnitaMisura.Text=articoli[index].UnitaMisura;
         }
+
     }
 }

@@ -48,10 +48,11 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             // lstElenco
             // 
             this.lstElenco.FormattingEnabled = true;
-            this.lstElenco.ItemHeight = 20;
-            this.lstElenco.Location = new System.Drawing.Point(469, 94);
+            this.lstElenco.ItemHeight = 15;
+            this.lstElenco.Location = new System.Drawing.Point(410, 70);
+            this.lstElenco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstElenco.Name = "lstElenco";
-            this.lstElenco.Size = new System.Drawing.Size(259, 344);
+            this.lstElenco.Size = new System.Drawing.Size(227, 259);
             this.lstElenco.TabIndex = 0;
             this.lstElenco.SelectedIndexChanged += new System.EventHandler(this.lstElenco_SelectedIndexChanged);
             // 
@@ -60,16 +61,18 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             this.cmbVisualizza.FormattingEnabled = true;
             this.cmbVisualizza.Items.AddRange(new object[] {
             "Visualizza articoli"});
-            this.cmbVisualizza.Location = new System.Drawing.Point(469, 50);
+            this.cmbVisualizza.Location = new System.Drawing.Point(410, 38);
+            this.cmbVisualizza.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbVisualizza.Name = "cmbVisualizza";
-            this.cmbVisualizza.Size = new System.Drawing.Size(210, 28);
+            this.cmbVisualizza.Size = new System.Drawing.Size(184, 23);
             this.cmbVisualizza.TabIndex = 1;
             // 
             // btnVisualizza
             // 
-            this.btnVisualizza.Location = new System.Drawing.Point(686, 50);
+            this.btnVisualizza.Location = new System.Drawing.Point(600, 38);
+            this.btnVisualizza.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVisualizza.Name = "btnVisualizza";
-            this.btnVisualizza.Size = new System.Drawing.Size(42, 29);
+            this.btnVisualizza.Size = new System.Drawing.Size(37, 22);
             this.btnVisualizza.TabIndex = 2;
             this.btnVisualizza.Text = "...";
             this.btnVisualizza.UseVisualStyleBackColor = true;
@@ -77,9 +80,10 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             // 
             // btnAggiungiArticolo
             // 
-            this.btnAggiungiArticolo.Location = new System.Drawing.Point(233, 371);
+            this.btnAggiungiArticolo.Location = new System.Drawing.Point(204, 278);
+            this.btnAggiungiArticolo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAggiungiArticolo.Name = "btnAggiungiArticolo";
-            this.btnAggiungiArticolo.Size = new System.Drawing.Size(152, 46);
+            this.btnAggiungiArticolo.Size = new System.Drawing.Size(133, 34);
             this.btnAggiungiArticolo.TabIndex = 3;
             this.btnAggiungiArticolo.Text = "Aggiungi articolo";
             this.btnAggiungiArticolo.UseVisualStyleBackColor = true;
@@ -94,9 +98,11 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(23, 94);
+            this.groupBox1.Location = new System.Drawing.Point(20, 70);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(417, 183);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(365, 137);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dettagli articolo selezionato";
@@ -104,86 +110,87 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             // lblPrezzo
             // 
             this.lblPrezzo.AutoSize = true;
-            this.lblPrezzo.Location = new System.Drawing.Point(152, 125);
+            this.lblPrezzo.Location = new System.Drawing.Point(133, 94);
             this.lblPrezzo.Name = "lblPrezzo";
-            this.lblPrezzo.Size = new System.Drawing.Size(18, 20);
+            this.lblPrezzo.Size = new System.Drawing.Size(16, 15);
             this.lblPrezzo.TabIndex = 10;
             this.lblPrezzo.Text = "...";
             // 
             // lblUnitaMisura
             // 
             this.lblUnitaMisura.AutoSize = true;
-            this.lblUnitaMisura.Location = new System.Drawing.Point(152, 86);
+            this.lblUnitaMisura.Location = new System.Drawing.Point(133, 64);
             this.lblUnitaMisura.Name = "lblUnitaMisura";
-            this.lblUnitaMisura.Size = new System.Drawing.Size(18, 20);
+            this.lblUnitaMisura.Size = new System.Drawing.Size(16, 15);
             this.lblUnitaMisura.TabIndex = 10;
             this.lblUnitaMisura.Text = "...";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(152, 86);
+            this.label4.Location = new System.Drawing.Point(133, 64);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 20);
+            this.label4.Size = new System.Drawing.Size(16, 15);
             this.label4.TabIndex = 10;
             this.label4.Text = "...";
             // 
             // lblDescrizione
             // 
             this.lblDescrizione.AutoSize = true;
-            this.lblDescrizione.Location = new System.Drawing.Point(152, 47);
+            this.lblDescrizione.Location = new System.Drawing.Point(133, 35);
             this.lblDescrizione.Name = "lblDescrizione";
-            this.lblDescrizione.Size = new System.Drawing.Size(18, 20);
+            this.lblDescrizione.Size = new System.Drawing.Size(16, 15);
             this.lblDescrizione.TabIndex = 10;
             this.lblDescrizione.Text = "...";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 47);
+            this.label1.Location = new System.Drawing.Point(31, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 20);
+            this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 10;
             this.label1.Text = "Descrizione";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 125);
+            this.label3.Location = new System.Drawing.Point(31, 94);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 20);
+            this.label3.Size = new System.Drawing.Size(41, 15);
             this.label3.TabIndex = 11;
             this.label3.Text = "Prezzo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 86);
+            this.label2.Location = new System.Drawing.Point(31, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 20);
+            this.label2.Size = new System.Drawing.Size(87, 15);
             this.label2.TabIndex = 12;
             this.label2.Text = "Unità di misura";
             // 
             // lblArticoliInseriti
             // 
             this.lblArticoliInseriti.AutoSize = true;
-            this.lblArticoliInseriti.Location = new System.Drawing.Point(23, 384);
+            this.lblArticoliInseriti.Location = new System.Drawing.Point(20, 288);
             this.lblArticoliInseriti.Name = "lblArticoliInseriti";
-            this.lblArticoliInseriti.Size = new System.Drawing.Size(79, 20);
+            this.lblArticoliInseriti.Size = new System.Drawing.Size(62, 15);
             this.lblArticoliInseriti.TabIndex = 10;
             this.lblArticoliInseriti.Text = "Articoli (0)";
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 450);
+            this.ClientSize = new System.Drawing.Size(648, 338);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnVisualizza);
             this.Controls.Add(this.cmbVisualizza);
             this.Controls.Add(this.lstElenco);
             this.Controls.Add(this.lblArticoliInseriti);
             this.Controls.Add(this.btnAggiungiArticolo);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmMain";
             this.Text = "Prof;Lab 2.2 4H;28/03/22 Prova singola gestione articoli";
             this.groupBox1.ResumeLayout(false);
