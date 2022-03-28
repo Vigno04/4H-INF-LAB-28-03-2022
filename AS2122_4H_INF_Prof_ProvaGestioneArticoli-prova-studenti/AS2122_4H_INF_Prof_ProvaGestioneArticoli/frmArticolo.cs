@@ -37,9 +37,15 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
         {
             // TODO: (7) passaggio all' attributo/property dei dati inseriti nella frmArticoli con controllo di valorizzazione del dato
             // ... descrizione, unitaMisura, prezzo
-
-            status = DialogResult.OK;
-            Close();
+            bool Completed = true;
+            if (txtDescrizione.Text != null) descrizione = txtDescrizione.Text; else { MessageBox.Show("inserire una descrizione"); Completed = false; }
+            if (cmbUnitaMisura.Text != null) unitaMisura = cmbUnitaMisura.Text; else { MessageBox.Show("inserire unita di misura"); Completed = false; }
+            if (txtPrezzo.Text != null) prezzo = int.Parse(txtPrezzo.Text); else { MessageBox.Show("inserire il presso"); Completed = false; }
+            if (Completed==true)
+            {
+                status = DialogResult.OK;
+                Close();
+            }           
         }
 
         private void btnAnnulla_Click(object sender, EventArgs e)
